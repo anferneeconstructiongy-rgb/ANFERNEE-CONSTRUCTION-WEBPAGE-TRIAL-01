@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Anfernee Construction — construction, architectural design, project services and transport solutions in Guyana.">
+<title>Anfernee Construction | Build • Design • Deliver</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#071a28;--navy2:#0b2536;--orange:#f05a18;--ink:#0c1720;--muted:#66717a;--paper:#f6f7f6;--line:#e1e5e7;--white:#fff;--max:1240px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.55}a{text-decoration:none;color:inherit}img{max-width:100%;display:block}.container{width:min(var(--max),92%);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e8ecee}.nav{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;gap:13px;min-width:315px}.brand img{width:82px;height:82px;object-fit:contain;filter:contrast(1.2)}.brand-name{font-size:23px;font-weight:900;line-height:.95;letter-spacing:.5px}.brand-name span{color:var(--orange);display:block;margin-top:7px}.tag{font-size:9px;letter-spacing:4px;font-weight:800;margin-top:9px}
+nav{display:flex;align-items:center;gap:25px;font-size:13px;font-weight:700}nav a:hover{color:var(--orange)}.quote{background:var(--orange);color:#fff;padding:13px 18px;border-radius:6px}.menu{display:none;border:0;background:none;font-size:27px}
+.hero{min-height:700px;position:relative;background:linear-gradient(90deg,rgba(4,20,31,.97) 0%,rgba(4,20,31,.88) 33%,rgba(4,20,31,.18) 66%,rgba(4,20,31,.05) 100%),url('hero.jpg') center/cover no-repeat;color:#fff;display:flex;align-items:center}.hero-content{width:min(var(--max),92%);margin:auto}.hero-copy{max-width:620px}.eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;font-weight:800;color:var(--orange);margin-bottom:16px}.hero .eyebrow{color:#fff}.hero h1{font-size:clamp(50px,6vw,78px);line-height:.98;letter-spacing:-3px;margin-bottom:23px;font-weight:900}.hero h1 span{color:var(--orange)}.hero p{font-size:18px;color:#e1e6e9;max-width:570px}.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:28px;padding:14px 24px;font-size:14px;font-weight:800;border:1px solid transparent;cursor:pointer}.btn.primary{background:var(--orange);color:#fff}.btn.ghost{border-color:#fff;color:#fff}.btn.dark{background:var(--navy);color:#fff}
+.gallery-strip{display:grid;grid-template-columns:repeat(4,1fr);background:#061723}.gallery-item{height:220px;position:relative;overflow:hidden;border-right:2px solid #fff}.gallery-item img{width:100%;height:100%;object-fit:cover;transition:.4s}.gallery-item:hover img{transform:scale(1.04)}.gallery-item span{position:absolute;left:12px;bottom:10px;background:rgba(4,20,31,.88);color:#fff;padding:7px 10px;border-radius:3px;font-size:12px;font-weight:700}
+section{padding:90px 0}.section-head{max-width:730px;margin-bottom:38px}.section-head h2{font-size:clamp(32px,4vw,47px);line-height:1.08;letter-spacing:-1.4px;margin-bottom:13px}.section-head p{color:var(--muted)}
+.services{background:var(--navy);color:#fff}.services .section-head p{color:#b9c5cc}.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.card{background:linear-gradient(145deg,#0c293b,#092131);border:1px solid rgba(255,255,255,.09);padding:26px 21px;min-height:215px}.card .icon{font-size:29px;color:var(--orange);margin-bottom:18px}.card h3{font-size:17px;line-height:1.2;margin-bottom:10px}.card p{font-size:13px;color:#c6d0d5}
+.benefits{padding:28px 0;background:#fff;border-bottom:1px solid var(--line)}.benefit-grid{display:grid;grid-template-columns:repeat(4,1fr)}.benefit{padding:10px 25px;border-right:1px solid var(--line);display:flex;gap:13px;align-items:center}.benefit:last-child{border:0}.benefit strong{display:block;font-size:13px}.benefit small{color:var(--muted)}.benefit .bi{font-size:28px;color:var(--orange)}
+.calculator{background:#f3f4f2}.calc-layout{display:grid;grid-template-columns:.82fr 1.18fr;gap:32px;align-items:start}.calc-copy{background:var(--navy);color:#fff;padding:44px;min-height:100%}.calc-copy h2{font-size:42px;line-height:1.08;margin-bottom:17px}.calc-copy p{color:#c6d0d5}.criteria{margin-top:28px;border-top:1px solid rgba(255,255,255,.14);padding-top:20px}.criteria h4{font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}.criteria p{font-size:12px;margin:8px 0}.calc-card{background:#fff;padding:35px;border:1px solid #dde2e4;box-shadow:0 18px 50px rgba(11,27,39,.08)}.calc-card h3{font-size:24px}.calc-card .intro{color:var(--muted);font-size:13px;margin:5px 0 24px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field label{display:block;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;margin-bottom:7px}.field input,.field select{width:100%;padding:13px;border:1px solid #d8dde0;border-radius:4px;background:#fbfbfa;font:inherit}.field input[readonly]{background:#eef1f2;font-weight:700}.calc-action{margin-top:18px}.results{display:none;grid-template-columns:1fr 1fr;gap:9px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}.result{background:#f2f3f2;padding:13px}.result span{display:block;font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:#6c7479}.result strong{font-size:18px}.cost{grid-column:1/-1;background:var(--orange);color:#fff;padding:17px}.cost span{color:#fff}.cost strong{font-size:28px}.note{font-size:10px;color:#7a8287;margin-top:14px}
+.projects{background:#fff}.project-grid{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:290px 290px;gap:15px}.project{position:relative;overflow:hidden}.project:first-child{grid-row:1/3}.project img{width:100%;height:100%;object-fit:cover;transition:.4s}.project:hover img{transform:scale(1.025)}.project-label{position:absolute;left:18px;bottom:17px;background:rgba(5,24,36,.9);color:#fff;padding:10px 13px;font-size:13px;font-weight:700}
+.price{background:#f7f7f5}.price-table{width:100%;border-collapse:collapse;background:#fff;box-shadow:0 12px 35px rgba(10,25,35,.05)}.price-table th,.price-table td{padding:16px 18px;border-bottom:1px solid #e8ebec;text-align:left}.price-table th{background:var(--navy);color:#fff;font-size:12px;text-transform:uppercase;letter-spacing:1px}.price-table td:last-child{font-weight:800;color:var(--orange)}.category td{background:#eef1f2;font-weight:900;color:var(--navy)!important;text-transform:uppercase;letter-spacing:1px}
+.contact{background:var(--navy);color:#fff}.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px}.contact h2{font-size:42px;line-height:1.1;margin-bottom:16px}.contact p{color:#c1ccd2}.contact-info{margin-top:28px;display:grid;gap:13px}.contact-info strong{color:var(--orange);display:block;font-size:11px;text-transform:uppercase;letter-spacing:1px}.contact-info span{color:#fff}.contact form{display:grid;gap:13px}.contact .row{display:grid;grid-template-columns:1fr 1fr;gap:13px}.contact input,.contact textarea{width:100%;padding:14px;border:1px solid rgba(255,255,255,.18);background:#0b2637;color:#fff;border-radius:4px;font:inherit}.contact textarea{min-height:145px;resize:vertical}.contact input::placeholder,.contact textarea::placeholder{color:#94a5ae}
+footer{background:#04121c;color:#aab7be;padding:30px 0}.foot{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:12px}.foot strong{color:#fff}
+@media(max-width:1050px){nav{display:none}.menu{display:block}.cards{grid-template-columns:repeat(2,1fr)}.calc-layout,.contact-grid{grid-template-columns:1fr}.project-grid{grid-template-columns:1fr 1fr}.project:first-child{grid-row:auto}.benefit-grid{grid-template-columns:1fr 1fr}.gallery-strip{grid-template-columns:1fr 1fr}.brand{min-width:auto}}
+@media(max-width:650px){.nav{min-height:76px}.brand img{width:62px;height:62px}.brand-name{font-size:17px}.tag{display:none}.hero{min-height:600px}.hero h1{font-size:48px}.gallery-strip{grid-template-columns:1fr}.gallery-item{height:240px}.cards,.project-grid,.form-grid,.results,.contact .row,.benefit-grid{grid-template-columns:1fr}.project-grid{grid-template-rows:auto}.project{height:270px}.benefit{border-right:0;border-bottom:1px solid var(--line)}.calc-copy,.calc-card{padding:27px}section{padding:65px 0}.price-table{font-size:12px}.price-table th,.price-table td{padding:12px 9px}}
+</style>
+
+<style>
+.services{background:#fff;color:var(--ink)}
+.services .section-head p{color:var(--muted)}
+.services .cards{grid-template-columns:repeat(4,1fr);gap:18px}
+.services .card{background:#fff;border:1px solid #dfe3e5;padding:30px 24px;min-height:255px;color:var(--ink);box-shadow:none}
+.services .card:hover{transform:translateY(-4px);box-shadow:0 14px 35px rgba(10,25,35,.07)}
+.services .card .icon{width:48px;height:48px;border-radius:50%;background:#fff0e8;display:grid;place-items:center;color:var(--orange);font-size:21px;margin-bottom:22px}
+.services .card h3{font-size:18px;margin-bottom:10px}
+.services .card p{font-size:14px;color:var(--muted);line-height:1.6}
+@media(max-width:1050px){.services .cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.services .cards{grid-template-columns:1fr}}
+</style>
+
+
+<style>
+.about-vibrant{background:linear-gradient(120deg,#101d29 0%,#172634 58%,#0b1a26 100%);color:#fff;position:relative;overflow:hidden}
+.about-vibrant:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:rgba(240,90,24,.09);right:-150px;top:-190px}
+.about-vibrant-grid{display:grid;grid-template-columns:1fr .92fr;gap:65px;align-items:center;position:relative;z-index:1}
+.about-copy .eyebrow{color:var(--orange);margin-bottom:20px}
+.about-copy h2{font-size:clamp(40px,5vw,58px);line-height:1.03;letter-spacing:-2px;margin-bottom:24px}
+.about-copy p{font-size:17px;line-height:1.7;color:#d2d9de;max-width:650px;margin-bottom:17px}
+.about-points{display:grid;gap:14px;margin-top:28px}
+.about-points div{font-size:16px;font-weight:700;display:flex;align-items:center;gap:12px}
+.about-points span{color:var(--orange);font-size:22px;font-weight:900}
+.about-visual{position:relative}
+.about-visual img{width:100%;height:490px;object-fit:cover;border-radius:3px;box-shadow:0 25px 55px rgba(0,0,0,.28)}
+.about-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(4,18,28,.75));pointer-events:none}
+.about-badge{position:absolute;left:-24px;bottom:26px;z-index:2;background:var(--orange);padding:18px 22px;box-shadow:0 12px 30px rgba(0,0,0,.22)}
+.about-badge strong{display:block;font-size:13px;letter-spacing:1.4px}
+.about-badge span{display:block;font-size:11px;margin-top:4px;color:#fff}
+@media(max-width:900px){.about-vibrant-grid{grid-template-columns:1fr}.about-visual img{height:400px}.about-badge{left:16px}}
+@media(max-width:650px){.about-copy h2{font-size:39px}.about-copy p{font-size:15px}.about-visual img{height:310px}}
+</style>
+
+
+<style>
+.services-premium{background:#061c2a!important;color:#fff!important;padding:90px 0!important}
+.services-premium .section-head{max-width:760px;margin-bottom:36px}
+.services-premium .section-head .eyebrow{color:#f05a18!important;font-size:11px;letter-spacing:3px}
+.services-premium .section-head h2{color:#fff!important;font-size:clamp(34px,4vw,48px);line-height:1.03}
+.services-premium .section-head p{color:#b9c7cf!important}
+.services-premium .cards{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:16px!important}
+.services-premium .card{background:linear-gradient(145deg,#0c2a3d,#092333)!important;border:1px solid rgba(255,255,255,.1)!important;padding:27px 22px!important;min-height:235px!important;color:#fff!important;box-shadow:none!important}
+.services-premium .card:hover{transform:translateY(-4px);border-color:rgba(240,90,24,.55)!important}
+.services-premium .card .icon{width:auto!important;height:auto!important;border-radius:0!important;background:transparent!important;display:block!important;color:#f05a18!important;font-size:25px!important;margin-bottom:20px!important}
+.services-premium .card h3{color:#fff!important;font-size:17px!important;line-height:1.15!important;margin-bottom:12px!important}
+.services-premium .card p{color:#c4d0d6!important;font-size:13px!important;line-height:1.55!important}
+@media(max-width:1050px){.services-premium .cards{grid-template-columns:repeat(2,1fr)!important}}
+@media(max-width:650px){.services-premium .cards{grid-template-columns:1fr!important}}
+</style>
+
+</head>
+<body>
+<header>
+<div class="container nav">
+  <a href="#home" class="brand">
+    <img src="logo.png" alt="Anfernee Construction logo">
+    <div><div class="brand-name">ANFERNEE <span>CONSTRUCTION</span></div><div class="tag">BUILD • DESIGN • DELIVER</div></div>
+  </a>
+  <nav><a href="#home">Home</a><a href="#services">Services</a><a href="#calculator">Plan Calculator</a><a href="#projects">Projects</a><a href="#about">About Us</a><a href="#contact">Contact</a><a class="quote" href="#contact">Get a Quote</a></nav>
+  <button class="menu" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Menu">☰</button>
+</div>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="hero-content"><div class="hero-copy">
+  <div class="eyebrow">Quality construction for a better tomorrow</div>
+  <h1>YOUR VISION.<br>OUR <span>EXPERTISE.</span></h1>
+  <p>Residential and commercial construction, architectural design, project services and reliable solutions for clients across Guyana.</p>
+  <div class="buttons"><a class="btn primary" href="#contact">Get a Quote →</a><a class="btn ghost" href="#projects">View Our Projects →</a></div>
+</div></div>
+</section>
+
+<div class="gallery-strip">
+  <div class="gallery-item"><img src="flat-front.jpg" alt="Typical flat house design"><span>Typical Flat House</span></div>
+  <div class="gallery-item"><img src="elevated-rear.jpg" alt="Elevated residential home rear view"><span>Elevated Residential Home</span></div>
+  <div class="gallery-item"><img src="flat-veranda.jpg" alt="Residential home veranda"><span>Residential Home</span></div>
+  <div class="gallery-item"><img src="elevated-front.jpg" alt="Elevated residential design"><span>Elevated House Design</span></div>
+</div>
+
+<section id="services" class="services services-premium">
+<div class="container">
+  <div class="section-head">
+    <div class="eyebrow">Our Services</div>
+    <h2>Comprehensive Construction<br>Solutions</h2>
+    <p>Professional services designed to take your project from concept and planning through delivery.</p>
+  </div>
+  <div class="cards">
+    <article class="card"><div class="icon">⌂</div><h3>Residential<br>Construction</h3><p>Custom homes, elevated houses, renovations and residential improvements.</p></article>
+    <article class="card"><div class="icon">▥</div><h3>Commercial<br>Construction</h3><p>Functional commercial spaces supported by practical planning and execution.</p></article>
+    <article class="card"><div class="icon">✎</div><h3>Architectural Design and<br>3D Visualization</h3><p>House plans, 3D concepts, renderings and design documentation.</p></article>
+    <article class="card"><div class="icon">▣</div><h3>Project Services</h3><p>Quantity take-offs, coordination and technical support for construction projects.</p></article>
+    <article class="card"><div class="icon">⚒</div><h3>Additions &amp;<br>Renovations</h3><p>Extend, modernize and improve existing residential or commercial property.</p></article>
+  </div>
+</div>
+</section>
+
+<div class="benefits"><div class="container benefit-grid">
+  <div class="benefit"><div class="bi">◈</div><div><strong>Quality Workmanship</strong><small>Built to last</small></div></div>
+  <div class="benefit"><div class="bi">◉</div><div><strong>Experienced Service</strong><small>Professional & reliable</small></div></div>
+  <div class="benefit"><div class="bi">◷</div><div><strong>Project Focused</strong><small>Planning and delivery</small></div></div>
+  <div class="benefit"><div class="bi">◆</div><div><strong>Client Focused</strong><small>Your vision is our priority</small></div></div>
+</div></div>
+
+<section id="calculator" class="calculator">
+<div class="container calc-layout">
+  <div class="calc-copy">
+    <div class="eyebrow">Plan calculator</div>
+    <h2>Know what can fit before you design.</h2>
+    <p>Enter the lot dimensions and select the proposed building type. The calculator applies the setback criteria and automatically selects the corresponding Anfernee Construction plan rate.</p>
+    <div class="criteria"><h4>Setback criteria</h4>
+      <p>• Lots up to 100 ft deep: 15 ft front / 10 ft rear.</p>
+      <p>• Lots between 100 ft and 120 ft: 20 ft front / 10 ft rear.</p>
+      <p>• Lots above 120 ft: 25 ft front / 15 ft rear.</p>
+      <p>• Lots up to 49 ft wide: each side setback = 1/6 of lot width.</p>
+      <p>• Lots 50 ft and above: 10 ft setback on each side.</p>
+    </div>
+  </div>
+  <div class="calc-card">
+    <h3>Plan Area & Cost Calculator</h3>
+    <div class="intro">Enter your lot dimensions to calculate the maximum preliminary building envelope and estimated plan-design cost.</div>
+    <div class="form-grid">
+      <div class="field"><label>Lot Width (ft)</label><input id="lotWidth" type="number" min="1" step=".01" placeholder="e.g. 50"></div>
+      <div class="field"><label>Lot Depth (ft)</label><input id="lotDepth" type="number" min="1" step=".01" placeholder="e.g. 100"></div>
+      <div class="field"><label>Building Type</label>
+        <select id="planType" onchange="updatePlanType()">
+          <optgroup label="Residential">
+            <option value="30" data-floors="1">Typical Flat House – Ground Floor</option>
+            <option value="30" data-floors="1">Elevated House – Ground Floor</option>
+            <option value="30" data-floors="1">Elevated House – First Floor</option>
+            <option value="45" data-floors="2">2-Storey Residential House</option>
+            <option value="50" data-floors="3">3-Storey Residential House</option>
+            <option value="50" data-floors="1">Apartment Building</option>
+          </optgroup>
+          <optgroup label="Commercial">
+            <option value="45" data-floors="1">Simple 1-Storey Commercial Building</option>
+            <option value="55" data-floors="2">Simple 2-Storey Commercial Building</option>
+            <option value="65" data-floors="3">3-Storey Commercial Building</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="field"><label>Number of Floors</label><input id="floors" value="1" readonly></div>
+      <div class="field"><label>Rate (GYD / sq. ft.)</label><input id="rate" value="30.00" readonly></div>
+    </div>
+    <div class="calc-action"><button class="btn primary" type="button" onclick="calculate()">Calculate Plan Cost</button></div>
+    <div id="results" class="results">
+      <div class="result"><span>Front Setback</span><strong id="front">—</strong></div>
+      <div class="result"><span>Rear Setback</span><strong id="rear">—</strong></div>
+      <div class="result"><span>Side Setback (each)</span><strong id="side">—</strong></div>
+      <div class="result"><span>Maximum Building Width</span><strong id="bw">—</strong></div>
+      <div class="result"><span>Maximum Building Depth</span><strong id="bd">—</strong></div>
+      <div class="result"><span>Max Footprint / Floor</span><strong id="fp">—</strong></div>
+      <div class="result"><span>Total Plan Area</span><strong id="area">—</strong></div>
+      <div class="result"><span>Applied Rate</span><strong id="rr">—</strong></div>
+      <div class="result cost"><span>Estimated Plan Cost (GYD)</span><strong id="cost">—</strong></div>
+    </div>
+    <div class="note">Preliminary estimate only. Actual allowable development may vary based on location, road, drainage, easements, site conditions and applicable planning requirements. Final plan area and professional fee should be confirmed before engagement.</div>
+  </div>
+</div>
+</section>
+
+<section id="projects" class="projects">
+<div class="container">
+  <div class="section-head"><div class="eyebrow">Selected projects</div><h2>Designed with purpose. Presented with clarity.</h2><p>Residential concepts and 3D visualizations produced to help clients understand the finished design before construction.</p></div>
+  <div class="project-grid">
+    <div class="project"><img src="elevated-front.jpg" alt="Elevated residence"><div class="project-label">Elevated Residential Design</div></div>
+    <div class="project"><img src="flat-front.jpg" alt="Flat house front"><div class="project-label">Typical Flat House</div></div>
+    <div class="project"><img src="elevated-rear.jpg" alt="Elevated house stairs"><div class="project-label">Elevated House – Side Access</div></div>
+    <div class="project"><img src="flat-veranda.jpg" alt="Residential veranda"><div class="project-label">Flat House Rear View</div></div>
+  </div>
+</div>
+</section>
+
+
+<section id="about" class="about-vibrant">
+<div class="container about-vibrant-grid">
+  <div class="about-copy">
+    <div class="eyebrow">About Anfernee Construction</div>
+    <h2>Professional service.<br>Practical solutions.</h2>
+    <p>We combine construction knowledge, architectural design capability and project-focused service to help clients move from concept to completion.</p>
+    <p>Our approach is straightforward: understand the requirement, plan carefully, communicate clearly and deliver work with attention to detail.</p>
+    <div class="about-points">
+      <div><span>✓</span> Residential &amp; commercial projects</div>
+      <div><span>✓</span> Architectural Design and 3D Visualization</div>
+      <div><span>✓</span> Construction and improvement works</div>
+      <div><span>✓</span> Transport and vehicle leasing services</div>
+    </div>
+  </div>
+  <div class="about-visual">
+    <img src="flat-veranda.jpg" alt="Anfernee Construction architectural design">
+    <div class="about-badge"><strong>BUILD • DESIGN • DELIVER</strong><span>Construction &amp; design solutions in Guyana</span></div>
+  </div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="container contact-grid">
+  <div><div class="eyebrow">Contact us</div><h2>Let's discuss your next project.</h2><p>Contact Anfernee Construction for house plans, construction, project services or other enquiries.</p>
+    <div class="contact-info"><div><strong>Location</strong><span>Georgetown, Guyana</span></div><div><strong>Email</strong><span><a href="mailto:anferneeconstruction.gy@gmail.com">anferneeconstruction.gy@gmail.com</a></span></div>
+  <div><strong>Phone / WhatsApp</strong><span><a href="https://wa.me/7060171" target="_blank">+592 706 0171</a></span></div>
+</div>
+  </div>
+  <form onsubmit="event.preventDefault();alert('Thank you. Please contact Anfernee Construction by phone, WhatsApp or email to submit your enquiry.');">
+    <div class="row"><input required placeholder="Your name"><input required type="email" placeholder="Email address"></div>
+    <div class="row"><input placeholder="Phone number"><input placeholder="Service required"></div>
+    <textarea required placeholder="Tell us about your project"></textarea>
+    <button class="btn primary" type="submit">Send Enquiry</button>
+  </form>
+</div>
+</section>
+</main>
+
+<footer><div class="container foot"><div><strong>ANFERNEE CONSTRUCTION</strong><br>Georgetown, Guyana</div><div>© 2026 Anfernee Construction. All rights reserved.</div></div></footer>
+
+<script>
+function updatePlanType(){
+ const s=document.getElementById('planType'),o=s.options[s.selectedIndex];
+ document.getElementById('rate').value=Number(o.value).toFixed(2);
+ document.getElementById('floors').value=o.dataset.floors;
+}
+function gyd(n){return new Intl.NumberFormat('en-GY',{style:'currency',currency:'GYD',maximumFractionDigits:0}).format(n)}
+function calculate(){
+ const w=parseFloat(document.getElementById('lotWidth').value),d=parseFloat(document.getElementById('lotDepth').value);
+ if(!w||!d||w<=0||d<=0){alert('Please enter a valid lot width and lot depth.');return}
+ let f,r;if(d<=100){f=15;r=10}else if(d<=120){f=20;r=10}else{f=25;r=15}
+ const side=w<=49?w/6:10,bw=Math.max(0,w-2*side),bd=Math.max(0,d-f-r),fp=bw*bd;
+ const floors=Number(document.getElementById('floors').value),rate=Number(document.getElementById('rate').value),area=fp*floors,cost=area*rate;
+ document.getElementById('front').textContent=f+' ft';document.getElementById('rear').textContent=r+' ft';document.getElementById('side').textContent=side.toFixed(2)+' ft';
+ document.getElementById('bw').textContent=bw.toFixed(2)+' ft';document.getElementById('bd').textContent=bd.toFixed(2)+' ft';document.getElementById('fp').textContent=fp.toFixed(0)+' sq. ft.';
+ document.getElementById('area').textContent=area.toFixed(0)+' sq. ft.';document.getElementById('rr').textContent='$'+rate.toFixed(2)+' / sq. ft.';document.getElementById('cost').textContent=gyd(cost);
+ document.getElementById('results').style.display='grid';
+}
+updatePlanType();
+</script>
+</body>
+</html>
