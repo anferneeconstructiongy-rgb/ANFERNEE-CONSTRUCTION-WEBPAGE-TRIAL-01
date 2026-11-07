@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="Anfernee Construction — construction, architectural design, project services and transport solutions in Guyana.">
 <title>Anfernee Construction | Dream • Design • Build</title>
-<link rel="icon" type="Logo - Chrome.png" href="Logo - Chrome.png">
+<link rel="icon" type="image/png" href="logo.png">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -115,7 +115,7 @@ body.transport-mode #transportPage,body.projects-mode #projectsPage,body.detail-
 </style>
 <style>
 
-/* START UPDATE: light portfolio design, matching the approved  preview */
+/* START UPDATE: light portfolio design, matching the approved renovation preview */
 #projectsPage .portfolio-hero{min-height:248px;padding:37px 0;background:linear-gradient(93deg,rgba(4,23,38,.97),rgba(4,23,38,.9) 57%,rgba(4,23,38,.15)),url('Photorealistic tropical gable house facade-4.png') right 44%/cover}
 #projectsPage .portfolio-hero .back-link{margin-bottom:10px;color:#d9e7ee;font-size:12px}
 #projectsPage .portfolio-hero h1{font-size:clamp(39px,5vw,61px);margin:6px 0;line-height:1.1;letter-spacing:-1.4px}
@@ -200,6 +200,76 @@ body.transport-mode #transportPage,body.projects-mode #projectsPage,body.detail-
 /* END UPDATE: portfolio and interactive photo viewer */
 
 </style>
+
+<!-- MOBILE-ONLY ADDITIONS: existing image filenames, logo, and desktop styles retained -->
+<style id="anfernee-mobile-optimizations">
+/* Phone and tablet usability; only changes layout at narrower viewport widths. */
+html,body{max-width:100%;overflow-x:clip}
+button,a,input,select,textarea{touch-action:manipulation}
+:focus-visible{outline:3px solid #f05a18;outline-offset:3px}
+@media(max-width:1050px){
+ header .nav{position:relative}
+ header nav.open{max-height:calc(100dvh - 76px);overflow-y:auto;z-index:100;gap:0;align-items:stretch;padding:12px 4% 20px}
+ header nav.open a{display:flex;align-items:center;min-height:48px;width:100%;border-bottom:1px solid #edf0f2;font-size:15px;padding:12px 14px}
+ header nav.open .quote{margin-top:12px;justify-content:center;border:0}
+ .menu{min-width:48px;min-height:48px;cursor:pointer;border-radius:8px}
+}
+@media(max-width:760px){
+ .container,.hero-content{width:min(100% - 32px,var(--max))}
+ .nav{gap:10px;min-height:76px}
+ .brand{gap:8px;min-width:0;flex:1}
+ .brand img{width:56px;height:56px;flex:none}
+ .brand-name{font-size:clamp(14px,4vw,19px);letter-spacing:0;line-height:1.08}
+ .brand-name span{margin-top:3px}
+ .hero{min-height:clamp(480px,78svh,660px);background-position:60% center;align-items:flex-end;padding:80px 0 62px;background-image:linear-gradient(90deg,rgba(4,20,31,.93),rgba(4,20,31,.62)),url('Modern Tropical Elevated Home.png')}
+ .hero-copy{max-width:100%}.hero h1{font-size:clamp(38px,10vw,58px);letter-spacing:-1.5px;line-height:1.03;overflow-wrap:break-word}
+ .hero p{font-size:16px;line-height:1.6}.hero .eyebrow{font-size:10px;letter-spacing:2px}
+ .buttons{gap:10px}.btn{min-height:48px;padding:13px 19px;text-align:center}
+ .gallery-strip{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-item{height:165px}
+ section{padding:55px 0}.section-head h2{font-size:clamp(28px,8vw,38px)}
+ .services-premium .cards{grid-template-columns:1fr!important}.services-premium .card{min-height:0!important;padding:22px!important}
+ .calc-layout,.contact-grid,.about-vibrant-grid{grid-template-columns:minmax(0,1fr);gap:22px}
+ .calc-copy,.calc-card{padding:23px 19px}.calc-copy h2{font-size:32px}
+ .form-grid{grid-template-columns:minmax(0,1fr)}
+ .field input,.field select,.contact input,.contact textarea,.modal-fields input,.modal-fields select,.modal-fields textarea{min-height:48px;font-size:16px}
+ .results{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}.result{padding:12px 9px}.result strong{font-size:15px;overflow-wrap:anywhere}.cost strong{font-size:23px}
+ .calc-action .btn,.contact-submit{width:100%}
+ .contact .row{grid-template-columns:1fr}.contact h2{font-size:33px}.contact-info{overflow-wrap:anywhere}
+ .about-visual img{height:280px}.about-badge{padding:11px 14px}
+ .foot{flex-direction:column;align-items:flex-start;gap:10px}
+ #projectsPage .portfolio-hero{min-height:0;padding:33px 0}
+ #projectsPage .portfolio-hero h1{font-size:clamp(32px,9vw,46px);letter-spacing:-1px}
+ #projectsPage .portfolio-section{padding:22px 0 60px}
+ #projectsPage .portfolio-filters,.renovation-filter-links{display:flex;gap:8px;overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start;padding:5px 0 14px;scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+ #projectsPage .portfolio-filter,.renovation-filter-links button{min-height:44px;flex:0 0 auto;white-space:nowrap;font-size:12px;padding:10px 14px}
+ #projectsPage .portfolio-grid{grid-template-columns:minmax(0,1fr);gap:14px}
+ #projectsPage .portfolio-image{height:240px}
+ #projectsPage .portfolio-card-body{min-height:0;padding:17px}.portfolio-view{min-height:46px}
+ .portfolio-bottom{margin-top:35px;padding:25px 0}
+ .detail-layout,.detail-gallery{grid-template-columns:minmax(0,1fr);gap:16px}
+ .detail-top{padding:28px 0 24px}.detail-top h1{font-size:clamp(29px,8vw,42px)}
+ .detail-main{padding:20px 0 55px}.detail-main-image{max-height:55svh;min-height:190px}
+ .detail-thumb img{height:190px}.detail-panel{padding:18px}.detail-gallery-heading{font-size:22px}
+ .renovation-detail-grid{grid-template-columns:minmax(0,1fr)}
+ .renovation-photo-grid.before-grid,.renovation-photo-grid.progress-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .renovation-photo{min-width:0}
+ .renovation-lightbox{padding:62px 32px 45px}.renovation-lightbox figure img{max-height:70dvh}
+ .lightbox-prev{left:2px}.lightbox-next{right:2px}
+ .lightbox-close{top:12px;right:13px}
+ .modal-dialog{width:100%;padding:28px 19px;max-height:calc(100dvh - 30px)}
+ .modal-fields{grid-template-columns:minmax(0,1fr)}
+}
+@media(max-width:390px){
+ .brand img{width:48px;height:48px}.brand-name{font-size:14px}
+ .gallery-item{height:140px}
+ .hero h1{font-size:37px}
+ #projectsPage .portfolio-image{height:195px}
+ .renovation-photo-grid.before-grid,.renovation-photo-grid.progress-grid{gap:6px}
+ .detail-gallery{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+<!-- END MOBILE-ONLY ADDITIONS -->
 </head>
 <body>
 <header>
@@ -208,8 +278,8 @@ body.transport-mode #transportPage,body.projects-mode #projectsPage,body.detail-
     <img src="logo.png" alt="Anfernee Construction logo">
     <div><div class="brand-name">ANFERNEE <span>CONSTRUCTION</span></div><div class="tag">DREAM • DESIGN • BUILD</div></div>
   </a>
-  <nav><a href="#home">Home</a><a href="#services">Services</a><a href="#calculator">Plan Calculator</a><a href="#projects">Projects</a><a href="#transport">Future Transport</a><a href="#about">About Us</a><a href="#contact">Contact</a><a class="quote" href="#contact">Get a Quote</a></nav>
-  <button class="menu" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Menu">☰</button>
+  <nav id="mainNavigation"><a href="#home">Home</a><a href="#services">Services</a><a href="#calculator">Plan Calculator</a><a href="#projects">Projects</a><a href="#transport">Future Transport</a><a href="#about">About Us</a><a href="#contact">Contact</a><a class="quote" href="#contact">Get a Quote</a></nav>
+  <button class="menu" aria-controls="mainNavigation" aria-expanded="false" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Menu">☰</button>
 </div>
 </header>
 
@@ -671,8 +741,21 @@ document.addEventListener("DOMContentLoaded", function () {
  if(location.hash.startsWith('#project/'))window.renderProjectDetail(location.hash.slice(9));
  setFilter('all');
 })();
+/* END UPDATE */
 
+</script>
 
+<!-- MOBILE NAV ACCESSIBILITY: links close menu on tap; desktop unaffected -->
+<script id="mobile-nav-behaviour">
+(function(){
+ const btn=document.querySelector('header .menu');
+ const nav=document.getElementById('mainNavigation');
+ if(!btn||!nav)return;
+ btn.addEventListener('click',()=>btn.setAttribute('aria-expanded',String(nav.classList.contains('open'))));
+ nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.focus();}});
+ document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!btn.contains(e.target)&&nav.classList.contains('open')){nav.classList.remove('open');btn.setAttribute('aria-expanded','false');}});
+})();
 </script>
 </body>
 </html>
