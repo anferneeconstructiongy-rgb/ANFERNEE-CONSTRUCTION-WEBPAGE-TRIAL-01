@@ -194,6 +194,16 @@ body.inquiry-open{overflow:hidden}
 .quote-response.error{background:#fff0ee;color:#8c2424}
 .contact-form>small{grid-column:1/-1}
 </style>
+<style>
+/* CALCULATOR CORRECTION: keep errors visible and optional floor controls tidy */
+.estimate-error{margin:12px 0 0;padding:12px 15px;background:#fff0ee;border-left:4px solid #bd3d2b;color:#8c2424;border-radius:6px;font-weight:700}
+.estimate-error[hidden],#apartmentFloorsField[hidden]{display:none!important}
+.field label small{font-size:11px;color:#667784;font-weight:500;text-transform:none}
+/* CALCULATOR: side-setback frontage parking checkbox */
+.parking-option label{display:flex;align-items:flex-start;gap:9px;line-height:1.4}
+.parking-option input[type="checkbox"]{width:18px!important;min-height:18px!important;height:18px!important;flex:0 0 18px;margin:1px 0 0;padding:0;accent-color:#ef6416}
+.parking-option small{display:block;margin-top:5px;color:#596c79;font-size:11px}
+</style>
 </head>
 <body>
 <header><div class="container top"><a class="brand" href="#home"><img alt="Original Anfernee Construction emblem" src="logo.png"/><div><strong>ANFERNEE<span>CONSTRUCTION</span></strong><small>DREAM • DESIGN • BUILD</small></div></a><button aria-expanded="false" aria-label="Open menu" class="menu-toggle" id="menuButton" type="button">☰</button><nav aria-label="Main navigation" class="nav-links" id="siteNav"><a class="active" href="#home">Home</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#estimate">Plan Calculator</a><a href="#transport">Transport Service</a><a href="#contact">Contact</a></nav></div></header>
@@ -220,8 +230,13 @@ body.inquiry-open{overflow:hidden}
 
 
 <!-- MOVED: Let's Build headline merged with Contact Us directly after the Plan Calculator. -->
-<section class="estimate" id="estimate"><div class="container"><div class="estimate-head"><div><div class="eyebrow">Planning a Project?</div><h2 class="section-title">Get a Quick Plan Estimate</h2><p>Want to know what your plan could cost? Fill out your lot dimensions and select your building type for an instant preliminary estimate — or request a personalized quotation.</p></div></div><div class="est-card"><div class="est-aside"><div aria-hidden="true" class="sketch">⌂</div><h3>Plan Cost Calculator</h3><p>Enter your property dimensions to calculate the preliminary buildable envelope and the estimated cost of preparing your architectural plans.</p><p><strong>All amounts in Guyana dollars (GYD).</strong></p></div><div class="est-fields"><form id="estimateForm"><div class="inputs"><div class="field"><label for="lotWidth">Lot Width (ft)</label><input id="lotWidth" inputmode="decimal" min="1" placeholder="e.g. 50" required="" step="0.01" type="number"/></div><div class="field"><label for="lotDepth">Lot Depth (ft)</label><input id="lotDepth" inputmode="decimal" min="1" placeholder="e.g. 100" required="" step="0.01" type="number"/></div><div class="field"><label for="planType">Building / Plan Type</label><select id="planType">
-<option data-floors="1" value="30">Typical Flat House — Ground Floor</option><option data-floors="1" value="30">Elevated House — Ground Floor</option><option data-floors="1" value="30">Elevated House — First Floor</option><option data-floors="2" value="45">2-Storey Residential House</option><option data-floors="3" value="50">3-Storey Residential House</option><option data-floors="1" value="50">Apartment Building</option><option data-floors="1" value="45">Simple 1-Storey Commercial</option><option data-floors="2" value="55">Simple 2-Storey Commercial</option><option data-floors="3" value="65">3-Storey Commercial</option></select></div><div class="field"><label for="rateDisplay">Rate (GYD / sq. ft.)</label><input id="rateDisplay" readonly="" value="30.00"/></div></div><div class="est-actions"><button class="btn primary" type="submit">Calculate Plan Cost →</button></div></form><div aria-live="polite" class="est-result" id="estimateResult"><div class="metric"><small>Front setback</small><strong id="rFront">—</strong></div><div class="metric"><small>Rear setback</small><strong id="rRear">—</strong></div><div class="metric"><small>Each side setback</small><strong id="rSide">—</strong></div><div class="metric"><small>Max building width</small><strong id="rWidth">—</strong></div><div class="metric"><small>Max building depth</small><strong id="rDepth">—</strong></div><div class="metric"><small>Estimated total plan area</small><strong id="rArea">—</strong></div><div class="total"><div><small>Estimated Plan Preparation Cost</small><strong id="rCost">—</strong></div><button type="button" class="btn primary open-inquiry" data-source="Plan estimate follow-up">Request Your Quote →</button></div></div><p class="estimate-note">Preliminary estimate only. Uses the previously specified setback criteria (front/rear/side) and published plan preparation rates. Final planning requirements, allowable development area, scope and professional fees must be confirmed. This is not a construction cost estimate. <strong>Disclaimer: Pricing and rates are subject to change. The final quotation may differ from this preliminary estimate.</strong></p></div></div></div></section><section class="contact" id="contact">
+<section class="estimate" id="estimate"><div class="container"><div class="estimate-head"><div><div class="eyebrow">Planning a Project?</div><h2 class="section-title">Get a Quick Plan Estimate</h2><p>Want to know what your plans could cost? Enter your lot dimensions and building type. You can also enter your proposed building size for a more useful preliminary estimate.</p></div></div><div class="est-card"><div class="est-aside"><div aria-hidden="true" class="sketch">⌂</div><h3>Plan Cost Calculator</h3><p>Enter lot dimensions and, if known, your proposed building dimensions. We show the preliminary buildable envelope and estimate architectural plan preparation fees from the proposed floor area.</p><p><strong>All amounts in Guyana dollars (GYD).</strong></p></div><div class="est-fields"><form id="estimateForm"><div class="inputs"><div class="field"><label for="lotWidth">Lot Width (ft)</label><input id="lotWidth" inputmode="decimal" min="1" placeholder="e.g. 50" required="" step="0.01" type="number"/></div><div class="field"><label for="lotDepth">Lot Depth (ft)</label><input id="lotDepth" inputmode="decimal" min="1" placeholder="e.g. 100" required="" step="0.01" type="number"/></div><div class="field"><label for="planType">Building / Plan Type</label><select id="planType">
+<option data-floors="1" value="30">Typical Flat House — Ground Floor</option><option data-floors="1" value="30">Elevated House — Ground Floor</option><option data-floors="1" value="30">Elevated House — First Floor</option><option data-floors="2" value="45">2-Storey Residential House</option><option data-floors="3" value="50">3-Storey Residential House</option><option data-floors="1" value="50">Apartment Building</option><option data-floors="1" value="45">Simple 1-Storey Commercial</option><option data-floors="2" value="55">Simple 2-Storey Commercial</option><option data-floors="3" value="65">3-Storey Commercial</option></select></div><div class="field"><label for="rateDisplay">Plan Rate (GYD / sq. ft.)</label><input id="rateDisplay" readonly="" value="30.00"/></div>
+<div class="field"><label for="buildingWidth">Proposed Building Width (ft) <small>— optional</small></label><input id="buildingWidth" inputmode="decimal" min="0.01" step="0.01" type="number" placeholder="Blank = max buildable width"/></div>
+<div class="field"><label for="buildingDepth">Proposed Building Length (ft) <small>— optional</small></label><input id="buildingDepth" inputmode="decimal" min="0.01" step="0.01" type="number" placeholder="Blank = max buildable length"/></div>
+<div class="field parking-option"><label for="frontageParking"><input id="frontageParking" type="checkbox"/> Parking along frontage (special setback case)</label><small>Applies 16 ft front and 10 ft rear setbacks where this provision is applicable.</small></div>
+<div class="field" id="apartmentFloorsField" hidden><label for="apartmentFloors">Apartment Building — Number of Floors</label><input id="apartmentFloors" type="number" min="1" max="20" step="1" value="1"/></div>
+</div><p class="estimate-note">Enter your lot dimensions first. Proposed building dimensions are optional: leave them blank to estimate a building using the entire preliminary buildable footprint. These are building dimensions, not lot dimensions. For lots over 120 ft deep, the calculator shows a maximum of two buildings, but estimates the plan fee for one building only; obtain a separate quotation for a two-building scheme.</p><div class="est-actions"><button class="btn primary" type="submit">Calculate Plan Cost →</button></div></form><p id="estimateError" class="estimate-error" role="alert" hidden></p><div aria-live="polite" class="est-result" id="estimateResult"><div class="metric"><small>Front setback</small><strong id="rFront">—</strong></div><div class="metric"><small>Rear setback</small><strong id="rRear">—</strong></div><div class="metric"><small>Each side setback</small><strong id="rSide">—</strong></div><div class="metric"><small>Max building width</small><strong id="rWidth">—</strong></div><div class="metric"><small>Max building depth</small><strong id="rDepth">—</strong></div><div class="metric"><small>Maximum number of buildings</small><strong id="rBuildings">—</strong></div><div class="metric"><small>Minimum separation between buildings</small><strong id="rSeparation">—</strong></div><div class="metric"><small>Building footprint used</small><strong id="rFootprint">—</strong></div><div class="metric"><small>Number of floors</small><strong id="rFloors">—</strong></div><div class="metric"><small>Estimated plan area for one proposed building</small><strong id="rArea">—</strong></div><div class="total"><div><small>Estimated Plan Preparation Cost</small><strong id="rCost">—</strong></div><button type="button" class="btn primary open-inquiry" data-source="Plan estimate follow-up">Request Your Quote →</button></div></div><p class="estimate-note">Preliminary estimate only. Uses the previously specified setback criteria (front/rear/side) and published plan preparation rates. Setbacks and density are interpreted from the supplied guidance; frontage parking applicability, building separation, allowable development area, scope and professional fees must be confirmed with the relevant authority. This is not a construction cost estimate. <strong>Disclaimer: Pricing and rates are subject to change. The final quotation may differ from this preliminary estimate.</strong></p></div></div></div></section><section class="contact" id="contact">
 <!-- UPDATED: Unified Let's Build Your Next Project + Contact Us section; redundant Get in Touch button removed. -->
 <div class="container"><div class="contact-hero"><div class="eyebrow">YOUR NEXT PROJECT STARTS HERE</div><h2>Let's Build <em>Your Next Project</em></h2><p>Tell us what you have in mind, and we'll help you plan the next step. Share your details in the quotation form below.</p></div></div>
 <div class="container contact-inner"><div><div class="eyebrow">Contact Us</div><h2 class="section-title">Request a Quotation</h2><p>Share your project details and we'll help you determine the next step.</p><div class="contact-list"><div>📍 A Field Sophia, Georgetown, Guyana</div><a href="mailto:anferneeconstruction.gy@gmail.com">✉ anferneeconstruction.gy@gmail.com</a><a href="https://wa.me/5927060171" rel="noopener" target="_blank">☏ WhatsApp: +592 706-0171</a></div></div><form class="contact-form" id="quoteForm"><input aria-label="Your name" name="name" placeholder="Your Name" required=""/><input aria-label="Phone number" name="phone" placeholder="Phone / WhatsApp" required=""/><input aria-label="Email" name="email" placeholder="Email Address" required="" type="email"/><select aria-label="Requested service" name="service"><option>Architectural Design / Plan</option><option>3D Visualization</option><option>Renovation</option><option>Site Supervision</option><option>Other Enquiry</option></select><textarea aria-label="Project details" name="message" placeholder="Tell us about your project, location, estimated dimensions, and other requirements" required=""></textarea><button class="btn primary" id="quoteSubmit" type="submit">Send Quote Enquiry →</button><p id="quoteResponse" role="status" aria-live="polite" class="quote-response" hidden></p><small></small>
@@ -350,9 +365,59 @@ body.inquiry-open{overflow:hidden}
 const $=id=>document.getElementById(id);
 $('year').textContent=new Date().getFullYear();
 const menu=$('menuButton'); menu.addEventListener('click',()=>{const on=$('siteNav').classList.toggle('open');menu.setAttribute('aria-expanded',String(on));menu.textContent=on?'✕':'☰';}); document.querySelectorAll('#siteNav a').forEach(a=>a.addEventListener('click',()=>{$('siteNav').classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰';}));
-const plan=$('planType');function syncRate(){$('rateDisplay').value=Number(plan.value).toFixed(2)}plan.addEventListener('change',syncRate);syncRate();
+const plan=$('planType');
+function syncRate(){
+ $('rateDisplay').value=Number(plan.value).toFixed(2);
+ const apartments=plan.selectedOptions[0]?.textContent.includes('Apartment Building');
+ $('apartmentFloorsField').hidden=!apartments;
+ $('apartmentFloors').required=apartments;
+ $('estimateResult').classList.remove('show');
+}
+plan.addEventListener('change',syncRate);syncRate();
 const money=x=>'GYD '+Math.round(x).toLocaleString('en-US');
-$('estimateForm').addEventListener('submit',event=>{event.preventDefault();const w=Number($('lotWidth').value),d=Number($('lotDepth').value);if(!Number.isFinite(w)||!Number.isFinite(d)||w<=0||d<=0){alert('Enter valid lot dimensions.');return;}let front,rear;if(d<=100){front=15;rear=10}else if(d<=120){front=20;rear=10}else{front=25;rear=15}const side=w<=49?w/6:10;const bw=Math.max(0,w-side*2),bd=Math.max(0,d-front-rear);const floors=Number(plan.selectedOptions[0].dataset.floors),area=bw*bd*floors,cost=area*Number(plan.value);if(bw===0||bd===0){alert('Based on the entered dimensions and preliminary setbacks, there is no remaining buildable area. Please contact us for a site-specific review.');return;}$('rFront').textContent=front+' ft';$('rRear').textContent=rear+' ft';$('rSide').textContent=side.toFixed(2)+' ft';$('rWidth').textContent=bw.toFixed(2)+' ft';$('rDepth').textContent=bd.toFixed(2)+' ft';$('rArea').textContent=area.toLocaleString('en-US',{maximumFractionDigits:0})+' sq. ft.';$('rCost').textContent=money(cost);$('estimateResult').classList.add('show');$('estimateResult').scrollIntoView({behavior:'smooth',block:'nearest'});});
+function showEstimateError(message){
+ const note=$('estimateError');note.textContent=message;note.hidden=false;
+ $('estimateResult').classList.remove('show');
+}
+$('estimateForm').addEventListener('submit',event=>{
+ event.preventDefault();
+ const note=$('estimateError');note.hidden=true;note.textContent='';
+ const w=Number($('lotWidth').value),d=Number($('lotDepth').value);
+ if(!Number.isFinite(w)||!Number.isFinite(d)||w<=0||d<=0){showEstimateError('Enter valid positive lot dimensions.');return;}
+ // User-supplied lot depth / width requirements; subject to authority approval.
+ // Base 10 ft front/rear setbacks are superseded by the depth-specific requirements.
+ let front,rear;
+ if(d<=100){front=15;rear=10}
+ else if(d<=120){front=20;rear=10}
+ else{front=25;rear=15}
+ if($('frontageParking').checked){front=16;rear=10}
+ const side=w<50?w/6:10;
+ const maxBuildings=d<=120?1:2;
+ const separation=maxBuildings===2?20:0;
+ const maxWidth=w-side*2,maxDepth=d-front-rear;
+ if(maxWidth<=0||maxDepth<=0){showEstimateError('No buildable footprint remains under these preliminary setback assumptions. Contact us for a site-specific review.');return;}
+ const proposedWidth=$('buildingWidth').value.trim();
+ const proposedDepth=$('buildingDepth').value.trim();
+ const buildingWidth=proposedWidth===''?maxWidth:Number(proposedWidth);
+ const buildingDepth=proposedDepth===''?maxDepth:Number(proposedDepth);
+ if(!Number.isFinite(buildingWidth)||!Number.isFinite(buildingDepth)||buildingWidth<=0||buildingDepth<=0){showEstimateError('Enter valid proposed building dimensions, or leave both blank to use the maximum buildable footprint.');return;}
+ if(buildingWidth>maxWidth+0.000001||buildingDepth>maxDepth+0.000001){showEstimateError(`The proposed building exceeds the preliminary buildable envelope (${maxWidth.toFixed(2)} ft wide × ${maxDepth.toFixed(2)} ft long). Please reduce the proposed building dimensions.`);return;}
+ const apartments=plan.selectedOptions[0]?.textContent.includes('Apartment Building');
+ const floors=apartments?Number($('apartmentFloors').value):Number(plan.selectedOptions[0].dataset.floors);
+ if(!Number.isInteger(floors)||floors<1||floors>20){showEstimateError('Enter a valid whole number of floors (1–20).');return;}
+ const footprint=buildingWidth*buildingDepth;
+ const area=footprint*floors;
+ const cost=area*Number(plan.value);
+ const sqft=x=>x.toLocaleString('en-US',{maximumFractionDigits:2})+' sq. ft.';
+ $('rFront').textContent=front+' ft';$('rRear').textContent=rear+' ft';
+ $('rSide').textContent=side.toFixed(2)+' ft';
+ $('rWidth').textContent=maxWidth.toFixed(2)+' ft';$('rDepth').textContent=maxDepth.toFixed(2)+' ft';
+ $('rBuildings').textContent=String(maxBuildings);$('rSeparation').textContent=maxBuildings===2?'20 ft (where applicable)':'Not applicable';
+ $('rFootprint').textContent=sqft(footprint);$('rFloors').textContent=String(floors);
+ $('rArea').textContent=sqft(area);$('rCost').textContent=money(cost);
+ $('estimateResult').classList.add('show');
+ $('estimateResult').scrollIntoView({behavior:'smooth',block:'nearest'});
+});
 /* FIXED: Submit enquiry directly via the site's previously configured FormSubmit endpoint. */
 const quoteForm=$('quoteForm');
 if(quoteForm){
